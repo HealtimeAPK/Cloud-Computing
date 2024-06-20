@@ -1,0 +1,22 @@
+GET  http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJ5YWR1dCIsImVtYWlsIjoiZW1haWxAZ21haWwuY29tIiwiaWF0IjoxNzE3OTIyMDU5LCJleHAiOjE3MTc5MjIwNzl9.utiXKXv0YPCQMcuiPWWiDhajOal_xfmMXWxvoy6vBlg
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "yadut 2",
+    "email": "email2@gmail.com",
+    "password": "123456",
+    "confPassword": "1234567"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "email@gmail.com",
+    "password": "123456"
+}
